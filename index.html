@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvestCrypto Lab - Ganhar Dinheiro Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200">
+
+  <!-- HEADER -->
+  <header class="bg-black border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-emerald-400">Invest<span class="text-white">Crypto</span>Lab</h1>
+      
+      <nav class="hidden md:flex space-x-8 text-lg">
+        <a href="#" class="hover:text-emerald-400 transition">Início</a>
+        <a href="#" class="hover:text-emerald-400 transition">Melhores Plataformas</a>
+        <a href="#" class="hover:text-emerald-400 transition">Criptomoedas</a>
+        <a href="#" class="hover:text-emerald-400 transition">Investimentos</a>
+        <a href="#" class="hover:text-emerald-400 transition">Blog</a>
+      </nav>
+      
+      <button class="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-xl font-medium transition">
+        Entrar no Telegram
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg py-24">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        Os melhores sites para<br><span class="text-emerald-400">ganhar dinheiro online</span> em 2026
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+        Reviews honestos, plataformas testadas e estratégias que realmente funcionam.
+      </p>
+      <button onclick="document.getElementById('posts').scrollIntoView({ behavior: 'smooth' })" 
+              class="bg-emerald-500 hover:bg-emerald-600 text-xl px-10 py-5 rounded-2xl font-semibold transition">
+        Ver Plataformas →
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT - 3 COLUNAS -->
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-10" id="posts">
+
+    <!-- POSTS (8 colunas) -->
+    <div class="lg:col-span-8 space-y-10">
+
+      <!-- Aqui vais adicionando os teus artigos -->
+      <div class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 hover:border-emerald-500 transition group">
+        <img src="https://source.unsplash.com/random/800x400/?crypto" alt="" class="w-full h-64 object-cover">
+        <div class="p-8">
+          <h3 class="text-2xl font-semibold mb-3 group-hover:text-emerald-400 transition">Review: ClickBaitPays.me - Vale mesmo a pena?</h3>
+          <p class="text-gray-400 mb-6">Testei durante 3 semanas. Aqui está tudo o que precisas saber antes de investir.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-emerald-400">• Criptomoedas</span>
+            <span class="text-gray-500">12 Jun 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repete este bloco para mais posts -->
+      
+    </div>
+
+    <!-- SIDEBAR (4 colunas) -->
+    <div class="lg:col-span-4 space-y-8">
+
+      <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800">
+        <h3 class="text-xl font-bold mb-6">Newsletter</h3>
+        <p class="text-gray-400 mb-6">Recebe as melhores oportunidades diretamente no teu email.</p>
+        <input type="email" placeholder="O teu email" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-5 py-4 mb-4">
+        <button class="w-full bg-emerald-500 hover:bg-emerald-600 py-4 rounded-xl font-medium">Subscrever</button>
+      </div>
+
+      <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800">
+        <h3 class="text-xl font-bold mb-6">Categorias</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-gray-800 px-5 py-2 rounded-full text-sm">PTC</span>
+          <span class="bg-gray-800 px-5 py-2 rounded-full text-sm">Cryptos</span>
+          <span class="bg-gray-800 px-5 py-2 rounded-full text-sm">Passive Investment</span>
+          <span class="bg-gray-800 px-5 py-2 rounded-full text-sm">Trading</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 text-center text-gray-500">
+      <p>© 2026 InvestCrypto Lab - All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
