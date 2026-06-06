@@ -7,22 +7,27 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .hero-bg { 
-      background: linear-gradient(135deg, #4c1d95 0%, #9f1239 50%, #b91c1c 100%); 
+    body { 
+      font-family: 'Inter', system-ui, sans-serif; 
+    }
+    .main-bg {
+      background: linear-gradient(135deg, #0a2540 0%, #1e3a8a 40%, #312e81 80%, #1e3a8a 100%);
+      background-attachment: fixed;
     }
     .card-hover:hover { 
       transform: translateY(-12px); 
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3);
+      box-shadow: 0 25px 50px -12px rgb(16 185 129 / 0.4);
     }
   </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
+<body class="main-bg text-gray-100 min-h-screen">
 
   <!-- HEADER -->
-  <header class="bg-black border-b border-purple-900 sticky top-0 z-50">
+  <header class="bg-black/80 backdrop-blur-md border-b border-cyan-500/30 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-4xl font-bold text-white">MyCrypto<span class="text-emerald-400">Mindset</span></h1>
+      <h1 class="text-4xl font-bold tracking-tight">
+        MyCrypto<span class="text-emerald-400">Mindset</span>
+      </h1>
       
       <nav class="hidden md:flex space-x-8 text-lg font-medium">
         <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
@@ -32,58 +37,70 @@
         <a href="blog.html" class="hover:text-emerald-400 transition">Blog</a>
       </nav>
       
-      <button class="bg-emerald-500 hover:bg-emerald-600 px-8 py-4 rounded-2xl font-bold transition text-lg">
+      <button class="bg-emerald-500 hover:bg-emerald-600 px-8 py-4 rounded-2xl font-bold transition text-lg shadow-lg shadow-emerald-500/50">
         Join Telegram
       </button>
     </div>
   </header>
 
-  <!-- HERO - Mais Impactante -->
-  <section class="hero-bg py-20">
-    <div class="max-w-7xl mx-auto px-6 text-center">
+  <!-- HERO -->
+  <section class="pt-20 pb-16 text-center">
+    <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-        Best Websites to <span class="text-emerald-400">Make Money Online</span><br> in 2026
+        The Best Websites to<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">
+          Make Money Online
+        </span> in 2026
       </h2>
-      <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-        Honest reviews of platforms that actually pay • Real strategies • Tested daily
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+        Honest reviews • Real platforms • Strategies that actually work
       </p>
     </div>
   </section>
 
-  <!-- 3 COLUMNS - FIXADO -->
-  <div class="max-w-7xl mx-auto px-6 pb-20">
+  <!-- 3 COLUMNS -->
+  <div class="max-w-7xl mx-auto px-6 pb-24">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Card 1 -->
-      <div class="bg-gray-900/80 backdrop-blur rounded-3xl overflow-hidden border border-purple-500/30 hover:border-emerald-500 transition card-hover">
-        <img src="https://picsum.photos/id/1015/800/520" alt="ClickBaitPays" class="w-full h-60 object-cover">
+      <div class="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 hover:border-emerald-400 transition card-hover">
+        <img src="https://picsum.photos/id/1015/800/520" alt="ClickBaitPays" class="w-full h-64 object-cover">
         <div class="p-8">
-          <span class="bg-emerald-500 text-black text-xs font-bold px-4 py-1 rounded-full">PTC REVIEW</span>
-          <h3 class="text-2xl font-bold mt-5 mb-3">ClickBaitPays.me – Full Honest Review</h3>
-          <p class="text-gray-400">Tested for weeks. Real results, payouts and everything you need to know.</p>
-          <div class="mt-8 text-emerald-400 font-medium">June 12, 2026 →</div>
+          <span class="bg-emerald-500 text-black text-xs font-bold px-5 py-2 rounded-full">PTC REVIEW</span>
+          <h3 class="text-2xl font-bold mt-6 mb-3">ClickBaitPays.me - Full Review</h3>
+          <p class="text-gray-300">Tested for weeks. Real payouts and honest opinion.</p>
+          <div class="mt-8 flex justify-between items-center">
+            <span class="text-emerald-400 font-medium">June 12, 2026</span>
+            <span class="text-cyan-400 hover:text-cyan-300 cursor-pointer">Read more →</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-gray-900/80 backdrop-blur rounded-3xl overflow-hidden border border-purple-500/30 hover:border-emerald-500 transition card-hover">
-        <img src="https://picsum.photos/id/201/800/520" alt="Crypto" class="w-full h-60 object-cover">
+      <div class="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 hover:border-emerald-400 transition card-hover">
+        <img src="https://picsum.photos/id/201/800/520" alt="Crypto" class="w-full h-64 object-cover">
         <div class="p-8">
-          <span class="bg-emerald-500 text-black text-xs font-bold px-4 py-1 rounded-full">CRYPTO</span>
-          <h3 class="text-2xl font-bold mt-5 mb-3">Top 7 Cryptocurrencies to Explode in 2026</h3>
-          <p class="text-gray-400">The coins with real potential. Don't miss the next big move.</p>
-          <div class="mt-8 text-emerald-400 font-medium">June 10, 2026 →</div>
+          <span class="bg-emerald-500 text-black text-xs font-bold px-5 py-2 rounded-full">CRYPTOCURRENCY</span>
+          <h3 class="text-2xl font-bold mt-6 mb-3">Top 7 Cryptos That Can Explode in 2026</h3>
+          <p class="text-gray-300">Don't miss the next big opportunity in crypto.</p>
+          <div class="mt-8 flex justify-between items-center">
+            <span class="text-emerald-400 font-medium">June 10, 2026</span>
+            <span class="text-cyan-400 hover:text-cyan-300 cursor-pointer">Read more →</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-gray-900/80 backdrop-blur rounded-3xl overflow-hidden border border-purple-500/30 hover:border-emerald-500 transition card-hover">
-        <img src="https://picsum.photos/id/870/800/520" alt="Passive Income" class="w-full h-60 object-cover">
+      <div class="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 hover:border-emerald-400 transition card-hover">
+        <img src="https://picsum.photos/id/870/800/520" alt="Passive Income" class="w-full h-64 object-cover">
         <div class="p-8">
-          <span class="bg-emerald-500 text-black text-xs font-bold px-4 py-1 rounded-full">PASSIVE INCOME</span>
-          <h3 class="text-2xl font-bold mt-5 mb-3">How I Earn $300+/Day Passively</h3>
-          <p class="text-gray-400">Real strategies using crypto and online platforms. Beginner friendly.</p>
-          <div class="mt-8 text-emerald-400 font-medium">June 8, 2026 →</div>
+          <span class="bg-emerald-500 text-black text-xs font-bold px-5 py-2 rounded-full">PASSIVE INCOME</span>
+          <h3 class="text-2xl font-bold mt-6 mb-3">How to Earn Passive Income Online</h3>
+          <p class="text-gray-300">Beginner-friendly strategies that work in 2026.</p>
+          <div class="mt-8 flex justify-between items-center">
+            <span class="text-emerald-400 font-medium">June 8, 2026</span>
+            <span class="text-cyan-400 hover:text-cyan-300 cursor-pointer">Read more →</span>
+          </div>
         </div>
       </div>
 
@@ -91,8 +108,8 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="bg-black py-12 border-t border-purple-900">
-    <div class="max-w-7xl mx-auto px-6 text-center text-gray-500">
+  <footer class="bg-black/80 py-12 border-t border-cyan-900">
+    <div class="max-w-7xl mx-auto px-6 text-center text-gray-400">
       <p>© 2026 MyCryptoMindset • All Rights Reserved</p>
     </div>
   </footer>
